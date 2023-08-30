@@ -1,0 +1,13 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nombre": "Pablo",
+            "apellido": "Dominguez Romero",
+            "email": "pablo@correo.com",
+            "telefono": "667 34 56 78",
+            "empresa": "Freelance",
+            "puesto": "Desarrollador Frontend Junior"
+        }
+    ]
+}
