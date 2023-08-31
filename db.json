@@ -1,13 +1,14 @@
 {
-    "clientes": [
-        {
-            "id": 1,
-            "nombre": "Pablo",
-            "apellido": "Dominguez Romero",
-            "email": "pablo@correo.com",
-            "telefono": "667 34 56 78",
-            "empresa": "Freelance",
-            "puesto": "Desarrollador Frontend Junior"
-        }
-    ]
+  "clientes": [
+    {
+      "nombre": "Pablito",
+      "apellido": "Dominguez Romero",
+      "email": "correo@gmail.com",
+      "telefono": "666 34 45 56",
+      "empresa": "NTT Data",
+      "puesto": "Desarrollador Frontend Junior",
+      "estado": true,
+      "id": 1
+    }
+  ]
 }

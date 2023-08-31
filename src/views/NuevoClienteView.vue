@@ -1,7 +1,12 @@
 <script setup>
-    import RouterLink from '../components/UI/Routerlink.vue'
+    import ClienteService from '../services/ClienteService'
+    import RouterLink from '../components/UI/RouterLink.vue'
     import Heading from '../components/UI/Heading.vue'
     import { FormKit } from '@formkit/vue'
+    import { useRouter } from 'vue-router'
+
+    let router = useRouter()
+
     defineProps({
         titulo: {
             type: String
@@ -9,7 +14,13 @@
     })
 
     let handleSubmit = (data) => {
-        console.log(data)
+        data.estado = 1
+        ClienteService.agregarClientes(data)
+            .then(resp => {
+                //Redireccionar
+                router.push({ name: 'listado-clientes' })
+            })
+            .catch(error => console.log(error))
     }
 </script>
 
